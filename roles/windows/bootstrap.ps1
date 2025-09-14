@@ -10,11 +10,3 @@ if (-not (Get-PackageProvider -Name NuGet -ErrorAction SilentlyContinue)) {
 if (-not (Get-Module -ListAvailable -Name xActiveDirectory)) {
     Install-Module -Name xActiveDirectory -Force -Confirm:$false
 }
-
-
-Write-Output "Bootstrap: installing required DSC modules..."
-
-# Ensure NuGet provider is available
-Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
-
-

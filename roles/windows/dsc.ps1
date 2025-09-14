@@ -69,8 +69,6 @@ SimpleAD
 Start-DscConfiguration -Path ./SimpleAD -Wait -Verbose -Force
 
 
-
-
 # Write-Output "Applying DSC configuration..."
 
 # $DomainName = "lab.local"
